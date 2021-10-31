@@ -1,0 +1,42 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+collection-some-code.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IntelliJ
+.idea/
+
+# vs code
+.vscode/
+
+# cahce
+.temp_cache/
+
+.history
+.vscode
+dist
+coverage
+mutation
+node_modules
+build-storybook.log
+# stryker temp files
+.stryker-tmp
+storybook-static
+.env

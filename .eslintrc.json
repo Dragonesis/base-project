@@ -1,0 +1,55 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "es6": true,
+    "browser": true,
+    "amd": true,
+    "node": true
+  },
+
+  "plugins": ["@typescript-eslint", "react-hooks", "prettier", "react"],
+  "extends": ["eslint:recommended", "react-app", "prettier"],
+  "rules": {
+    "consistent-return": 2,
+    "indent": [1, 2, { "SwitchCase": 1 }],
+    "no-else-return": 1,
+    "semi": [1, "never"],
+    "space-unary-ops": 2,
+    "eqeqeq": 2,
+    "curly": 1,
+    "no-multi-spaces": 1,
+    "no-useless-return": 1,
+    "array-bracket-newline": [1, "consistent"],
+    "array-bracket-spacing": 1,
+    "block-spacing": 1,
+    "brace-style": 1,
+    "comma-spacing": 1,
+    "comma-style": 1,
+    "jsx-quotes": [1, "prefer-single"],
+    "key-spacing": 1,
+    "object-curly-spacing": [1, "always"],
+    "quotes": [1, "single"],
+    "no-var": 1,
+    "prefer-const": 1,
+    "react/display-name": 1,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/no-anonymous-default-export": [
+      "error",
+      {
+        "allowArray": true,
+        "allowArrowFunction": false,
+        "allowAnonymousClass": false,
+        "allowAnonymousFunction": false,
+        "allowCallExpression": true,
+        "allowLiteral": false,
+        "allowObject": true
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

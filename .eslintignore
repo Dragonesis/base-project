@@ -1,0 +1,8 @@
+/dist/**
+/node_modules/**
+/locales/_build/
+/locales/**/*.js
+/collection-some-code.js
+/tests/**
+webpack.config.ts
+*.css

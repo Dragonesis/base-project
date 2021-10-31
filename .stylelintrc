@@ -1,0 +1,104 @@
+{
+  "syntax": "css",
+  "plugins": [
+    "stylelint-order"
+  ],
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "indentation": 2,
+    "order/order": [
+      "custom-properties",
+      {
+        "type": "at-rule",
+        "name": "include"
+      },
+      "declarations",
+      {
+        "type": "rule",
+        "selector": "^&:\\w+$"
+      },
+      {
+        "type": "rule",
+        "selector": "^\\.[-_a-zA-Z0-9]+"
+      },
+      {
+        "type": "rule",
+        "selector": "^&__[-a-z0-9]+"
+      },
+      {
+        "type": "rule",
+        "selector": "^&--[-a-z0-9]+"
+      },
+      {
+        "type": "at-rule",
+        "name": "media"
+      }
+    ],
+    "order/properties-order": [
+      [
+        {
+          "properties": [
+            "content",
+            "box-sizing",
+            "display",
+            "flex",
+            "flex-wrap",
+            "flex-basis",
+            "flex-direction",
+            "flex-flow",
+            "flex-grow",
+            "flex-shrink",
+            "align-content",
+            "align-items",
+            "align-self",
+            "justify-content",
+            "order",
+            "grid",
+            "grid-area",
+            "grid-auto-*",
+            "grid-column",
+            "grid-column-*",
+            "grid-gap",
+            "grid-row",
+            "grid-row-*",
+            "grid-template",
+            "grid-template-*",
+            "position",
+            "z-index",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "width",
+            "min-width",
+            "max-width",
+            "height",
+            "min-height",
+            "max-height",
+            "overflow",
+            "overflow-*",
+            "margin",
+            "margin-*",
+            "border",
+            "border-*",
+            "padding",
+            "padding-*"
+          ]
+        },
+        {
+          "properties": [
+            "transform",
+            "transform-*",
+            "backface-visibility",
+            "perspective",
+            "perspective-origin",
+            "transition",
+            "transition-*",
+            "animation",
+            "animation-*"
+          ]
+        }
+      ]
+    ]
+  }
+}
