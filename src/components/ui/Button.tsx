@@ -19,9 +19,9 @@ export const Button: FC<ButtonProps> = ({ type = 'button', children, handleClick
 }
 
 const Core = styled.button`
-  height: 24px;
+  height: 26px;
   border-radius: 4px;
   border: 1px solid #3a3a3a;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
 `
