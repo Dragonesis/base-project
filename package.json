@@ -15,7 +15,8 @@
     "stylelint:fix": "stylelint \"src/**/*.css\" --fix",
     "test": "npx jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=68a093110866"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
